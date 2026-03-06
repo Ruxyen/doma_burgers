@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #ff1f1f;
+  --color-background-dark: #0A0A0A;
+}
+
+@layer utilities {
+  .neon-glow {
+    box-shadow: 0 0 15px rgba(255, 31, 31, 0.5);
+  }
+  .neon-text-glow {
+    text-shadow: 0 0 10px rgba(255, 31, 31, 0.8);
+  }
+  .hover-neon:hover {
+    box-shadow: 0 0 20px rgba(255, 31, 31, 0.6);
+    border-color: #ff1f1f;
+  }
+}
+
+body {
+  @apply bg-background-dark text-white antialiased;
+}
